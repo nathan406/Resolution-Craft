@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Resolution Craft</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  
+  <script src="index.js" defer></script>
+
+</head>
+
+<body>
+  <h1>Resolution Craft</h1>
+
+  <div id="content">
+    <!-- <section id="setup">
+      <h2>Setup</h2>
+      <label for="apiKeyInput">Please enter your Open API Key:</label>
+      <input type="text" id="apiKeyInput" placeholder="YOUR-API-KEY-HERE">
+    </section> -->
+
+    <section id="requestParameters">
+      <h2>Request parameters</h2>
+      <textarea name="" id="text-prompt" cols="30" rows="10">
+        An isometric view of a miniature city, tilt shift, bokeh, voxel, vray render, high detail.
+      </textarea>
+      <p></p>
+      <label for="imageCountInput">Image count (1 -  4):</label>
+      <input type="number"  id="image-count" min="1" max="4" value="1">
+    </section>
+
+    <section id="imageSizeSection">
+      <h2>Image size:</h2>
+      <ul>
+        <li><input type="radio" id="radio-256" name="image-size" value="256"> <span style="color: #ffffff;">256</span></li>
+        <li><input type="radio" id="radio-512"  name="image-size" value="512"> <span style="color: #ffffff;">512</span></li>
+        <li><input type="radio" id="radio-1024 " name="image-size" value="1024"> <span style="color: #ffffff;">1024</span></li>
+      </ul>
+    </section>
+  </div>
+
+ 
+
+  <section id="requestStatus">
+    <h2>Request status</h2>
+    <p  id="request-status">No request performed yet</p>
+  </section>
+
+  <button id="button-request">Request</button>
+
+  <h1>
+    Output
+  </h1>
+
+  <section class="last">
+ 
+    <div id="image-container"></div>
+  </section>
+  
+
+
+</body>
+
+</html>
+
