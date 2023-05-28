@@ -25,7 +25,7 @@ reqButton.onclick = function () {
 
   // Fetch image request data
   // const key = document.getElementById('api-key').value;
-  const key = "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"
+  const key = "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"
   const prompt = document.getElementById('text-prompt').value;
   const count = Number(document.getElementById('image-count').value);
   const radios = document.getElementsByName('image-size');
